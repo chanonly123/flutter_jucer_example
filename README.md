@@ -10,3 +10,7 @@ https://medium.com/@chan.only.123/bringing-juce-to-flutter-a-walk-in-the-park-pa
 Bringing JUCE to Flutter: A Walk in the Park — Part 2 (Flutter-Android) <br />
 https://medium.com/@chan.only.123/bringing-juce-to-flutter-a-walk-in-the-park-part-2-flutter-android-c3eca5bc9cb3
 
+# Run the app
+- Use `~/JUCE/Projucer.app` to generate the library projects
+- `dart run ffigen` to generate the dart bindings
+- run the app
