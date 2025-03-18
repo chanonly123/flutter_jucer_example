@@ -553,6 +553,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"audio_session\"",
+					"-framework",
+					"\"just_audio\"",
+					"-framework",
+					"\"path_provider_foundation\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterJucer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -736,6 +746,16 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"audio_session\"",
+					"-framework",
+					"\"just_audio\"",
+					"-framework",
+					"\"path_provider_foundation\"",
+					"-all_load",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterJucer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Runner/Runner-Bridging-Header.h";
@@ -758,6 +778,16 @@
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-framework",
+					"\"audio_session\"",
+					"-framework",
+					"\"just_audio\"",
+					"-framework",
+					"\"path_provider_foundation\"",
+					"-all_load",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterJucer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
