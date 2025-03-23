@@ -1,6 +1,7 @@
 # JUCE
 **/Builds
 **/JuceLibraryCode
+lib/juce_lib_gen.dart
 
 # Miscellaneous
 *.class

@@ -1,8 +1,22 @@
 #include "juce_lib.h"
 #include <JuceHeader.h>
 
+juce::AudioDeviceManager* deviceManager;
+
 void juce_init() {
-    // required
+    juce::initialiseJuce_GUI();
+    deviceManager = new juce::AudioDeviceManager();
+    int numInputChannelsNeeded = 0;
+    int numOutputChannelsNeeded = 1;
+    deviceManager->initialiseWithDefaultDevices(numInputChannelsNeeded, numOutputChannelsNeeded);
+}
+
+void Java_com_example_flutter_1jucer_JucerApplication_juce_1init() {
+    juce_init();
+}
+
+void juce_play_test_sound() {
+    deviceManager->playTestSound();
 }
 
 int juce_add(int a, int b) {
