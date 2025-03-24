@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <JUCERPROJECT id="Ixq7yt" name="juce_lib" projectType="library" useAppConfig="0"
-              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" postExportShellCommandPosix="bin/sh '%%1%%/post_gen.sh'">
+              addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" postExportShellCommandPosix="/bin/sh '%%1%%/post_gen.sh'">
   <MAINGROUP id="XcJWIV" name="juce_lib">
     <GROUP id="{D86E55F5-7179-FF22-D66C-AE41BEE6E043}" name="Source">
       <FILE id="E7vMZ3" name="juce_lib.cpp" compile="1" resource="0" file="Source/juce_lib.cpp"/>
