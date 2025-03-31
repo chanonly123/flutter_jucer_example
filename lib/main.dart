@@ -1,17 +1,13 @@
-import 'dart:ffi';
-
 import 'package:ffi/ffi.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_jucer/asset_helper.dart';
-import 'package:flutter_jucer/juce_lib_gen.dart';
 import 'package:flutter_jucer/juce_lib_wrapper.dart';
 import 'package:just_audio/just_audio.dart';
 
 Future<void> main() async {
-  runApp(const MyApp());
-
   JuceLibWrapper juce = JuceLibWrapper();
+  juce.lib.juce_init();
+  runApp(const MyApp());
   int result = juce.lib.juce_add(2, 3);
   print("result: $result");
 
