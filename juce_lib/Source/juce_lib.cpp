@@ -1,10 +1,6 @@
 #include "juce_lib.h"
 #include <JuceHeader.h>
 
-void juce_init() {
-    // required
-}
-
 int juce_add(int a, int b) {
     return a + b;
 }

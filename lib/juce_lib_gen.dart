@@ -21,14 +21,6 @@ class JuceLibGen {
           lookup)
       : _lookup = lookup;
 
-  void juce_init() {
-    return _juce_init();
-  }
-
-  late final _juce_initPtr =
-      _lookup<ffi.NativeFunction<ffi.Void Function()>>('juce_init');
-  late final _juce_init = _juce_initPtr.asFunction<void Function()>();
-
   int juce_add(
     int a,
     int b,
