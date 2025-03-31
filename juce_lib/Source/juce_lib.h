@@ -7,7 +7,6 @@
 #endif
 
 EXPORT_C_FUNC void juce_init();
-EXPORT_C_FUNC void Java_com_example_flutter_1jucer_JucerApplication_juce_1init();
 EXPORT_C_FUNC void juce_play_test_sound();
 EXPORT_C_FUNC int juce_add(int a, int b);
 EXPORT_C_FUNC int juce_apply_reverb_effect(const char* inputFile, const char* outputFile);

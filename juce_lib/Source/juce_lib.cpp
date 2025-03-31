@@ -11,10 +11,6 @@ void juce_init() {
     deviceManager->initialiseWithDefaultDevices(numInputChannelsNeeded, numOutputChannelsNeeded);
 }
 
-void Java_com_example_flutter_1jucer_JucerApplication_juce_1init() {
-    juce_init();
-}
-
 void juce_play_test_sound() {
     deviceManager->playTestSound();
 }
